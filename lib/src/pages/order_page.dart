@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodinfo/src/pages/signIn_page.dart';
 import '../widgets/order_card.dart';
 
 class OrderPage extends StatefulWidget {
@@ -37,7 +38,7 @@ class _OrderPageState extends State<OrderPage> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Container(
-        height: 220.0,
+        height: 215.0,
         margin: EdgeInsets.only(top: 20.0),
         child: Column(
           children: <Widget>[
@@ -74,21 +75,26 @@ class _OrderPageState extends State<OrderPage> {
               ],
             ),
             SizedBox(height: 20.0,),
-            Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 50.0),
-              height: 50.0,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(30.0),
-                boxShadow: [
-                  BoxShadow(color: Colors.black54 , blurRadius: 3.0 , offset: Offset(2.0, 3.0))
-                ]
-              ),
-              child: Text('Proceed to Checkout' , style: TextStyle(color: Colors.white , fontSize: 18.0 , fontWeight: FontWeight.bold),),
+            GestureDetector(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => SignInPage()));
+              },
+              child: Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(horizontal: 50.0),
+                height: 50.0,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(30.0),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black54 , blurRadius: 3.0 , offset: Offset(2.0, 3.0))
+                  ]
+                ),
+                child: Text('Proceed to Checkout' , style: TextStyle(color: Colors.white , fontSize: 18.0 , fontWeight: FontWeight.bold),),
 
-            )
+              ),
+            ),
           ],
         ),
       ),

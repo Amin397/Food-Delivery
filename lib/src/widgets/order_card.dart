@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class OrderCard extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -23,7 +24,8 @@ class OrderCard extends StatelessWidget {
               child: ListView(
                 children: <Widget>[
                   InkWell(
-                      onTap: () {},
+                      onTap: () {
+                      },
                       child: Icon(
                         Icons.keyboard_arrow_up,
                         color: Colors.grey,
@@ -34,7 +36,8 @@ class OrderCard extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   InkWell(
-                      onTap: () {},
+                      onTap: () {
+                      },
                       child: Icon(
                         Icons.keyboard_arrow_down,
                         color: Colors.grey,
@@ -75,9 +78,10 @@ class OrderCard extends StatelessWidget {
                   height: 5.0,
                 ),
                 Text(
-                  '3.0',
+                  '\u023b 3.0',
                   style: TextStyle(
                     fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
                     color: Colors.orangeAccent,
                   ),
                 ),

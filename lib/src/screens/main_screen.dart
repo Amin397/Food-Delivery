@@ -38,7 +38,6 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.orangeAccent,
         onTap: (int index) {
           setState(() {
             currentTabIndex = index;
