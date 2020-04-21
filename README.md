@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # foodinfo
 
 A new Flutter application.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Food-Delivery
+just flutter design :)
+>>>>>>> 2c2e8e9ae30c12d20b2e192a0a1ae1a268157736
